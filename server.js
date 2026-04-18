@@ -4,7 +4,8 @@ const { CosmosClient } = require('@azure/cosmos');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
+
 
 // Use the Connection String directly
 const client = new CosmosClient(process.env.COSMOS_CONNECTION_STRING);
